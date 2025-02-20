@@ -105,8 +105,8 @@ sudo reboot
 - 等待路由器重启完成后，PandoraBox大概率就已经刷写完成，此过程需要约两分钟
 - 此时，我们断开路由器电源，使用牙签抵住Reset按钮，同时接上路由器电源
 - 等待几秒钟后，路由器状态灯开始闪烁橙色
-此时，我们在网络与共享中心中可以看到路由器的IP地址已经变为192.168.1.1
-我们在路由器中输入此地址，就可以看见Pandora的界面
+- 此时，我们在网络与共享中心中可以看到路由器的IP地址已经变为192.168.1.1
+- 我们在路由器中输入此地址，就可以看见Pandora的界面
 <img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MIR3/Pandora.png" width=500>
 - **此时，潘多拉已刷写完成**
 
@@ -117,7 +117,7 @@ sudo reboot
 选择刚刚下载好的padavan固件，点击**恢复固件**
 
 - 等待进度条走完与路由器重启
-*注：我们可以打开网络与共享中心查看IPv4 DNS服务器地址
+- *注：我们可以打开网络与共享中心查看IPv4 DNS服务器地址
 等到电脑获取到DNS服务器地址后，即表示路由器已刷机完成*
 
 ---
@@ -131,13 +131,13 @@ sudo reboot
 
 - 接下来点击**高级设置**，点击进入**USB调制解调器**
 - 开启**启用USB调制解调器**按钮
-将**调制解调器**类型选择为**NDIS：LTE and other**
-**国家**选择为**China**
-**ISP**选择为你所使用的运营商
-**首选网络**选择为**LTE->UMTS**
-开启**自动获取DNS**
-未提及的选项保持默认
-确保无误后，点击**应用本页面设置**
+- 将**调制解调器**类型选择为**NDIS：LTE and other**
+- **国家**选择为**China**
+- **ISP**选择为你所使用的运营商
+- **首选网络**选择为**LTE->UMTS**
+- 开启**自动获取DNS**
+- 未提及的选项保持默认
+- 确保无误后，点击**应用本页面设置**
 <img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MIR3/USBMorden.png" width=500>
 
 - 在完成以上设置后，将你的手机或支持USB网络共享的随身WIFI插到路由器的USB接口上，并开启USB网络共享
