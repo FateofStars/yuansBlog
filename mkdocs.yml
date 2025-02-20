@@ -1,9 +1,13 @@
 site_name: yuan's Blog
+copyright: Ro Shimmmfan 2025 All rights reserved.
 theme: 
   name: material
 
   language: zh
 
+  features:
+    - navigation.footer
+     
   logo: yuanBlogLogo.png
   favicon: yuanBlogLogoInverted.png
 
