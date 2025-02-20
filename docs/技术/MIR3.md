@@ -71,6 +71,8 @@ http://192.168.31.1/cgi-bin/luci/;stok=(输入你的stok)/api/xqsystem/set_name_
 
 - **至此，就完成了对路由器开启SSH的步骤**
 
+---
+
 #### 刷写PandoraBox
 
 - 开启putty，在Host Name中，输入路由器的地址（可在网络设置、属性、IPv4 DNS服务器中进行查看），然后点击**Open**建立连接
