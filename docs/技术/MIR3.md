@@ -143,4 +143,7 @@ sudo reboot
 - 在完成以上设置后，将你的手机或支持USB网络共享的随身WIFI插到路由器的USB接口上，并开启USB网络共享
 等待一段时间后，就可以正常上网了
 <img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MIR3/padavanwebmap.png" width=300>
+
+---
+
 - **至此，小米路由器3刷老毛子并使用USB进行网络共享的教程全部完成**
