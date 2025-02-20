@@ -30,7 +30,3 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: 白昼模式
-  extra:
-  social:
-    - icon: fontawesome/brands/mastodon 
-      link: https://github.com/FateofStars

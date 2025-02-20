@@ -30,7 +30,7 @@
 
 - **在刷写固件之前，建议断开其他所有网络连接，以免出现意外状况**
 
-### 固件降级并开启SSH
+#### 固件降级并开启SSH
 
 - 进入路由器后台，选择下载好的固件进行升级
 
@@ -71,7 +71,7 @@ http://192.168.31.1/cgi-bin/luci/;stok=(输入你的stok)/api/xqsystem/set_name_
 
 - **至此，就完成了对路由器开启SSH的步骤**
 
-### 刷写PandoraBox
+#### 刷写PandoraBox
 
 - 开启putty，在Host Name中，输入路由器的地址（可在网络设置、属性、IPv4 DNS服务器中进行查看），然后点击**Open**建立连接
 <img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MIR3/putty.png">
@@ -112,7 +112,7 @@ sudo reboot
 
 ---
 
-### 刷写老毛子固件
+#### 刷写老毛子固件
 - 打开潘多拉界面，点击**选择文件**
 选择刚刚下载好的padavan固件，点击**恢复固件**
 
@@ -122,7 +122,7 @@ sudo reboot
 
 ---
 
-### 登录后台管理界面并配置USB网络共享
+#### 登录后台管理界面并配置USB网络共享
 
 - 再次将新获取的地址(一般为192.168.123.1)输入到浏览器中，会弹出路由器的认证窗口
 <img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MIR3/padavanloginin.png" width=300>
