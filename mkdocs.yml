@@ -6,11 +6,31 @@ theme:
   language: zh
 
   features:
-    - navigation.footer
+    - navigation.footer #文章切换脚标
+    - navigation.top # 返回顶部按钮
+    - search.highlight # 搜索结果高亮
+    - navigation.tabs # 分类标签
      
   logo: yuanBlogLogo.png
   favicon: yuanBlogLogoInverted.png
 
   palette:
-    primary: cyan
-    accent: deep purple
+  # Palette toggle for light mode
+    - scheme: default
+      primary: cyan
+      accent: purple
+      toggle:
+        icon: material/weather-night 
+        name: 暗夜模式
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: 白昼模式
+  extra:
+  social:
+    - icon: fontawesome/brands/mastodon 
+      link: https://github.com/FateofStars
