@@ -87,13 +87,13 @@ python --version
 ### 安装git
 - 双击打开git安装文件
 
-- 一直点击**Next**(*注：可根据个人需求修改安装选项*)，直到**Choosing the dafault editor used bug Git**
+- 一直点击**Next**(*注：可根据个人需求修改安装选项*)，直到**Choosing the dafault editor used by Git**
 
 - 在此项目中选择**Use Visual Studio Code as Git's default editor**选项
 
 <img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MkDocs/gitinstall.png" width=500>
 
-- 点击**Next**，来到**Adjuesting the name of the initail branch in new repositories**
+- 点击**Next**，来到**Adjusting the name of the initial branch in new repositories**
 
 - 勾选**Override the default branch name for new repositories**，下方输入框保持**main**不变
 
@@ -179,7 +179,7 @@ mkdocs new (项目名称)
 
 >docs 文件夹
 
->mkdock.yml
+>mkdocs.yml
 
 - 接下来，我们再次
 ```
@@ -258,7 +258,7 @@ copyright: (版权信息)
 - 两种类型的仓库创建方式的区别仅在于**Repository name**
 
 >- 要创建user类型的仓库，则在**Repository name**中输入 **用户名.github.io**
->- 要创建project类型的仓库，则在**Repository name**中输入**项目名**即可
+>- 要创建project类型的仓库，则在**Repository name**中输入 **项目名** 即可
 
 - 其他项目保持不变，点击**Create repository**即可完成创建
 
@@ -322,7 +322,7 @@ mkdocs gh-deploy
 
 来使MkDoccs对仓库中的文件进行渲染与挂载
 
->- 第一次运行命令时，肯能会看见
+>- 第一次运行命令时，可能会看见
 >```
 >WARNING - Version check skipped: NO version specified in previous deployment
 >```
