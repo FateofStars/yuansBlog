@@ -271,6 +271,49 @@ git init
 git add .
 git commit -m"(注释)"
 ```
+>在第一次使用命令
+
+>```
+>git commit -m"(注释)"
+>```
+
+>时，可能会报错
+
+```
+>Author identity unknown
+
+>*** Please tell me who you are.
+
+>Run
+
+>  git config --global user.email "you@example.com"
+>  git config --global user.name "Your Name"
+
+>to set your account's default identity.
+>Omit --global to set the identity only in this repository.
+
+>fatal: unable to auto-detect email address (got '(电脑用户名)@(电脑名称).(none)')
+```
+
+>- 这是因为我们还没有在git上创建账户
+
+>- 解决方法很简单，我们只需要创建一个账户即可
+
+>- 接下来，我们按照要求，输入
+
+```
+git config --global user.email "(你注册GitHub的邮箱地址)"
+
+git config --global user.name "(你的账户名)"
+```
+
+>- 操作完成后，我们再次输入命令
+
+```
+git commit -m"(注释)"
+```
+
+>即可正常执行命令
 
 - 接下来，我们就要准备将文件推送到GitHub上了
 - 我们返回到GitHub上新创建的项目，可以在**or push an existing repository from the command line**选项下面看见
@@ -323,9 +366,11 @@ mkdocs gh-deploy
 来使MkDoccs对仓库中的文件进行渲染与挂载
 
 >- 第一次运行命令时，可能会看见
->```
+
+```
 >WARNING - Version check skipped: NO version specified in previous deployment
->```
+```
+
 >这是正常现象，无需担心
 
 - 如果返回内容最后显示
@@ -433,3 +478,24 @@ git pull
 ```
 
 将仓库中的更改下载到本地，再重新执行push即可完成更新
+
+### 更改仓库名称后，无法正常通过git上传更改
+
+- 我们如果更改了GitHub的仓库名称，就会发现使用
+```
+git push -u origin main
+```
+命令时，无论如何也无法连接到仓库的情况
+
+- 这是因为我们更改了仓库名称，导致连接仓库的地址也发生了变化，需要我们对地址进行更改
+
+- 我们使用资源管理器打开项目所在的文件夹，选择**显示隐藏的项目**
+- 这时，我们就发现文件夹中多出来一个 **.** **git** 文件夹
+- 进入 .git 文件夹，在VSCode中打开其中的 **config** 文件
+
+- 找到
+```
+[remote "origin"]
+	url = https://github.com/(用户名)/(旧仓库名).git
+```
+- 将旧仓库名更改为新仓库名，保存即可
