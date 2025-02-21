@@ -1,4 +1,4 @@
-# 在 Windows 11 上部署 Material for MKDocs ，并将网站托管在 github 上的同时，使用 Custom domain 将网页挂在到自己的域名下
+# 在 Windows 11 上部署 Material for MKDocs ，并将网站托管在 github 上的同时，使用 Custom domain 将网页挂载到自己的域名下
 
 ## 参考文档
 [MkDocs-Getting Start](https://www.mkdocs.org/getting-started/)
