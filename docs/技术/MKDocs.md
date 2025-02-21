@@ -84,22 +84,22 @@ python --version
 
 - **若安装时提示“请联系管理员”，请退出程序，使用管理员权限运行后重新安装**
 
- ### 安装git
- - 双击打开git安装文件
+### 安装git
+- 双击打开git安装文件
 
- - 一直点击**Next**(*注：可根据个人需求修改安装选项*)，直到**Choosing the dafault editor used bug Git**
+- 一直点击**Next**(*注：可根据个人需求修改安装选项*)，直到**Choosing the dafault editor used bug Git**
 
- - 在此项目中选择**Use Visual Studio Code as Git's default editor**选项
+- 在此项目中选择**Use Visual Studio Code as Git's default editor**选项
 
- <img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MkDocs/gitinstall.png" width=500>
+<img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MkDocs/gitinstall.png" width=500>
 
- - 点击**Next**，来到**Adjuesting the name of the initail branch in new repositories**
+- 点击**Next**，来到**Adjuesting the name of the initail branch in new repositories**
 
- - 勾选**Override the default branch name for new repositories**，下方输入框保持**main**不变
+- 勾选**Override the default branch name for new repositories**，下方输入框保持**main**不变
 
- <img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MkDocs/gitinstall1.png" width=500>
+<img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MkDocs/gitinstall1.png" width=500>
 
- - 一直点击**Next**(*注：可根据个人需求修改安装选项*)，等待读条完毕，回到VSCode中
+- 一直点击**Next**(*注：可根据个人需求修改安装选项*)，等待读条完毕，回到VSCode中
 
 - 在TERMINAL中输入
 ```
@@ -126,7 +126,7 @@ git --version
 python -m pip install --upgrade pip
 ```
 
-- 等到输入框再次出现，则表明已升级完成
+等到输入框再次出现，则表明已升级完成
 
 ### 安装MkDocs 与 Material for MkDocs
 
@@ -135,14 +135,14 @@ python -m pip install --upgrade pip
 pip install mkdocs
 ```
 
-- 等到输入框再次出现，若没有报错则表明MkDocs已下载完成
+等到输入框再次出现，若没有报错则表明MkDocs已下载完成
 
 - 输入
 ```
 pip install mkdocs-material
 ```
 
-- 等到
+等到
 ```
 PS C:\Users\ (用户名)
 ```
@@ -156,7 +156,7 @@ PS C:\Users\ (用户名)
 cd (创建的路径)
 ```
 
-- 可以看到
+可以看到
 ```
 PS C:\Users\ (用户名)
 ```
@@ -176,7 +176,9 @@ mkdocs new (项目名称)
 来创建新项目
 
 - 创建成功后，我们在路径中就可以看见一个以项目名称命名的新文件夹，打开文件夹就可以看到下面内容
+
 >docs 文件夹
+
 >mkdock.yml
 
 - 接下来，我们再次
@@ -282,22 +284,25 @@ git push -u origin main
 - 将这三行命令依次复制到TERMINAL中执行
 
 >- 第一次执行命令时，可能会弹出窗口**Connect to GitHub**
-<img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MkDocs/connecttogithub.png" width=200>
+<img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MkDocs/connecttogithub.png" width=300>
 >- 我们点击**Sign in with your browser**
 >- 然后在弹出的浏览器中登录GitHub账户，并点击**Authorize git-ecosystem**
 <img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MkDocs/authorizegit.png" width=300>
 >(*注：在完成操作后这个授权页面可能会无法正常加载，无需担心，你已完成了登录，可以关掉网页回到VSCode了*)
 
 - 如果返回内容最后显示
->To github.com:(用户名)/(仓库名).git
->*[New branch]     main -> main
->branch 'main' set up to track 'origin/main'
+```
+To github.com:(用户名)/(仓库名).git
+*[New branch]     main -> main
+branch 'main' set up to track 'origin/main'
+```
  
 则说明已经将更改推送到仓库
 
 - 我们可以回到GitHub上查看文件是否已经出现
 
 - 如果返回结果出现
+
 >fatal: unable to access 'https://github.com/(用户名)/(仓库名).git': Failed to connect to github.com port 443 after ****** ms: Could not connect to server
 
 或
@@ -329,6 +334,8 @@ mkdocs gh-deploy
 则说明已经网页已成功构建
 
 - 如果返回结果出现大段红紫色报错，我们可以往上找到**fatal**
+- 若显示为
+
 >fatal: unable to access 'https://github.com/(用户名)/(仓库名).git': Failed to connect to github.com port 443 after ****** ms: Could not connect to server
 
 或
@@ -337,7 +344,7 @@ mkdocs gh-deploy
 等错误，多半是网络问题，可多次重试直到成功
 
 - 网页构建完成后，我们就可以来到GitHub，在顶部导航栏点击**Actions**，就可以看见网页的构建进程
-<img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MkDocs/pagebuilding.png" width=500>
+<img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MkDocs/pagebuilding.png" width=900>
 
 - 等待到**pages build and deployment**左侧的黄色点变为绿色勾，我们的网站就完成部署了，此过程约需要半分钟
 
@@ -345,13 +352,22 @@ mkdocs gh-deploy
 
 #### 使用Custom domain将网页挂载到自己的域名下
 
+##### GitHub部分设置
+
 - 在当前页面找到下面的**Custom domain**，在输入框中输入你的域名(*注：需自己在域名服务提供商上购买*)
 - 填写的域名可以是二级域名，也可以是三级域名
 
 >二级域名如：example.com
+
 >三级域名如：test.example.com
 
 - 点击**Save**，无需等待DNS Check完毕，看见**Your site is live at**后面的网址变为你设定的域名后，Custom domain在GitHub上就已经配置完成了
+
+- 等待一到两分钟，到下方的**Enforce HTTPS**左侧的选择框由灰变白，则勾选该选项
+
+<img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MkDocs/EnforceHTTPS.png">
+
+##### 域名解析部分设置
 
 - 接下来我们来到域名服务提供商的域名管理界面(*注：以阿里云为例*)，找到自己需要的域名，点击**解析**，进入云解析界面
 
@@ -359,9 +375,13 @@ mkdocs gh-deploy
 - **记录类型**选择**A**
 - **主机记录**按照自己的需求填写，**需要跟在GitHub中填写的一致**
 - **记录值**填写GitHub的IP地址(*注：为每一条地址添加一条解析，只需记录值有变化，其他不变*)
+
 >185.199.108.153
+
 >185.199.109.153
+
 >185.199.110.153
+
 >185.199.111.153
 
 - 其他保持默认
@@ -393,10 +413,15 @@ mkdocs gh-deploy
 ### 在配置完成Custom domain后，再次推送报错
 
 - 在配置完Custom domain后，可能会在下次push的时候会出现错误
+
 >error: failed to push some refs to 'https://github.com/(用户名)/(仓库名).git'
+
 >hint: Updates were reject because the remote contains work that you do not
+
 >hint: the same ref. If you want to intergrate the remote changes, use
+
 >hint: 'git pull' before pushing again.
+
 >hint: See the 'Note about fast-forwards' in 'git push --help' for details
 
 - 这是因为我们在配置Custom domain的时候，会在仓库中新增更改
