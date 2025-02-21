@@ -1,5 +1,9 @@
-# Welcome to yuan's Blog
+hide: 
+    -navigation
 
-輝け Lonely Star
 
-<img src="proto.jpg" width=120 heigth=120>
+# **Welcome to yuan's Blog**
+
+>輝け Lonely Star
+
+<img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/proto.jpg" width=120 heigth=120>

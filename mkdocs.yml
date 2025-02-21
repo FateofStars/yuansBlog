@@ -1,5 +1,5 @@
 site_name: yuan's Blog
-copyright: Ro Shimmmfan 2025 All rights reserved.
+copyright: Ro Shimmmfan | © 2025 | All rights reserved.
 theme: 
   name: material
 
@@ -10,23 +10,33 @@ theme:
     - navigation.top # 返回顶部按钮
     - search.highlight # 搜索结果高亮
     - navigation.tabs # 分类标签
+    - toc.follow # 锚点跟随
      
   logo: yuanBlogLogo.png
   favicon: yuanBlogLogoInverted.png
 
   palette:
-  # Palette toggle for light mode
-    - scheme: default
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/toggle-switch
+        name: 白昼模式
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
       primary: cyan
       accent: purple
       toggle:
-        icon: material/weather-night 
+        icon: material/weather-sunny
         name: 暗夜模式
 
     # Palette toggle for dark mode
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       primary: deep purple
       accent: teal
       toggle:
-        icon: material/weather-sunny
-        name: 白昼模式
+        icon: material/weather-night
+        name: 根据系统  
