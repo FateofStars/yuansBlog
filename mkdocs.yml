@@ -11,6 +11,9 @@ theme:
     - search.highlight # 搜索结果高亮
     - navigation.tabs # 分类标签
     - toc.follow # 锚点跟随
+    - navigation.instant
+    - navigation.instant.progress # 加载进度指示器
+  
      
   logo: yuanBlogLogo.png
   favicon: yuanBlogLogoInverted.png
