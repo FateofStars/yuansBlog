@@ -42,4 +42,14 @@ theme:
       accent: teal
       toggle:
         icon: material/weather-night
-        name: 根据系统  
+        name: 根据系统
+
+
+nav: 
+  - "Welcome": index.md
+  - "技术":
+    - tech/index.md
+    - "硬件":
+      - "将USB网络共享至小米路由器3": tech/MIR3.md
+    - "软件":
+      - "从零开始在Win11部署Material for MkDocs": tech/MKDocs.md
