@@ -53,3 +53,12 @@ nav:
       - "将USB网络共享至小米路由器3": tech/MIR3.md
     - "软件":
       - "从零开始在Win11部署Material for MkDocs": tech/MKDocs.md
+  - "服务器": 
+    - server/index.md
+    - "弱电与服务器的布局发展历程": 
+      - "网络篇": server/networkprogress.md
+      - "存储篇": server/stroageprogress.md
+      - "算力篇": server/computeprogress.md
+    - "遇到的问题":
+      - "群晖DS923+": server/problems/SynologyDS923p.md
+      - "铭凡UM880Pro": server/problems/minisfromUM880Pro.md
