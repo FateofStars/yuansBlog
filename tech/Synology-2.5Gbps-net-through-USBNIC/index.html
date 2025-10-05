@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../MIR3/">
       
       
-        <link rel="next" href="../Synology-2.5Gbps-net-through-USBNIC/">
+        <link rel="next" href="../MKDocs/">
       
       
       <link rel="icon" href="../../yuanBlogLogoInverted.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>将USB网络共享至小米路由器3 - yuan's Blog</title>
+        <title>通过 USB 2.5G/5G/10G 网卡为群晖NAS提供高速网络连接 - yuan's Blog</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#3usb" class="md-skip">
+        <a href="#usb-25g5g10g-nas" class="md-skip">
           跳转至
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              将USB网络共享至小米路由器3
+              通过 USB 2.5G/5G/10G 网卡为群晖NAS提供高速网络连接
             
           </span>
         </div>
@@ -465,6 +465,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../MIR3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    将USB网络共享至小米路由器3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -482,7 +505,7 @@
   
   
   <span class="md-ellipsis">
-    将USB网络共享至小米路由器3
+    通过 USB 2.5G/5G/10G 网卡为群晖NAS提供高速网络连接
     
   </span>
   
@@ -495,7 +518,7 @@
   
   
   <span class="md-ellipsis">
-    将USB网络共享至小米路由器3
+    通过 USB 2.5G/5G/10G 网卡为群晖NAS提供高速网络连接
     
   </span>
   
@@ -555,18 +578,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ssh" class="md-nav__link">
+  <a href="#nascpu" class="md-nav__link">
     <span class="md-ellipsis">
-      固件降级并开启SSH
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pandorabox" class="md-nav__link">
-    <span class="md-ellipsis">
-      刷写PandoraBox
+      查询NAS的CPU型号以及适用套件架构
     </span>
   </a>
   
@@ -575,16 +589,76 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      刷写老毛子固件
+      下载网卡驱动套件
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#usb" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      登录后台管理界面并配置USB网络共享
+      安装网卡驱动套件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bond" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用网络bond来增强网络连接的可用性
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置完成后的实际连接速率
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Q&amp;A
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Q&amp;A">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      为什么不使用矿神源提供的网卡驱动套件？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bond_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      为什么要放弃稳定的传输速度而选择使用Bond？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      为什么使用“自适应均衡负载”而不是使用“活动/备用”模式呢？
     </span>
   </a>
   
@@ -599,29 +673,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Synology-2.5Gbps-net-through-USBNIC/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    通过 USB 2.5G/5G/10G 网卡为群晖NAS提供高速网络连接
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1133,18 +1184,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ssh" class="md-nav__link">
+  <a href="#nascpu" class="md-nav__link">
     <span class="md-ellipsis">
-      固件降级并开启SSH
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pandorabox" class="md-nav__link">
-    <span class="md-ellipsis">
-      刷写PandoraBox
+      查询NAS的CPU型号以及适用套件架构
     </span>
   </a>
   
@@ -1153,16 +1195,76 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      刷写老毛子固件
+      下载网卡驱动套件
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#usb" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      登录后台管理界面并配置USB网络共享
+      安装网卡驱动套件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bond" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用网络bond来增强网络连接的可用性
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置完成后的实际连接速率
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Q&amp;A
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Q&amp;A">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      为什么不使用矿神源提供的网卡驱动套件？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bond_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      为什么要放弃稳定的传输速度而选择使用Bond？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      为什么使用“自适应均衡负载”而不是使用“活动/备用”模式呢？
     </span>
   </a>
   
@@ -1189,165 +1291,156 @@
 
 
 
-<h1 id="3usb">小米路由器3刷老毛子并使用USB进行网络共享</h1>
+<h1 id="usb-25g5g10g-nas">通过 USB 2.5G/5G/10G 网卡为群晖NAS提供高速网络连接</h1>
 <h2 id="_1">参考文档</h2>
-<p><a href="https://blog.csdn.net/s_daqing/article/details/116398731">CSDN-小米路由器3刷机</a></p>
-<p><a href="https://www.right.com.cn/forum/thread-8287327-1-1.html">恩山无线论坛-小米路由器3（Xiaomi Mi Router R3）刷openwrt</a></p>
-<p><a href="https://ioozu.com/post-3137.html#gsc.tab=0">浏览器记录logo-手机共享网络给Padavan老毛子USB调制解调器设置,Padavan老毛子USB调制解调器</a></p>
+<p><a href="https://www.youtube.com/watch?v=iu_Tv-68lng">Youtube - 给Synology DS923+ NAS增加2.5G USB网卡的配置过程</a></p>
+<p><a href="https://kb.synology.cn/zh-cn/DSM/tutorial/What_kind_of_CPU_does_my_NAS_have">Synology | 知识中心与文档库 - 群晖NAS 套件架构查询</a></p>
+<p><a href="https://github.com/bb-qq/r8152?tab=readme-ov-file">Github - DSM driver for realtek RTL8152/8153/8156/8157/8159 based USB Ethernet adapters</a></p>
+<p><a href="https://post.smzdm.com/p/a4pn0kvw/">什么值得买 - 群晖外接兮克2.5G网卡教程</a></p>
 <h2 id="_2">文件下载</h2>
-<p>下列链接均为固件下载链接，点击即可下载</p>
-<p><a href="http://bigota.miwifi.com/xiaoqiang/rom/r3/miwifi_r3_all_55ac7_2.11.20.bin">小米路由器开发板2.11.20固件</a></p>
-<p><a href="http://downloads.pangubox.com:6380/pb-boot/18.07.25/pb-boot-xiaomi3-20180724-ef73b47.img">pb-boot固件</a></p>
-<p><a href="https://opt.cn2qq.com/padavan/MI-R3_3.4.3.9-099.trx">老毛子padavan固件</a></p>
+<p><a href="https://github.com/bb-qq/r8152/releases">网卡驱动套件 - relase page</a></p>
 <h2 id="_3">使用工具</h2>
 <p><a href="https://www.putty.org/?hl=zh-cn">putty</a></p>
-<p><a href="https://winscp.net/eng/docs/lang:chs">WinSCP</a></p>
-<p>牙签一根</p>
-<hr />
+<p>2.5Gbps USB有线网卡一个 (使用Realtek RTL8156解决方案)</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p class="annotate">在购买网卡前，请确保网卡使用的方案为瑞昱的<code>RTL8152</code> <code>RTL8153</code> <code>RTL8156(1)</code> <code>RTL8157</code> <code>RTL8159</code>芯片</p>
+<ol>
+<li>一般来说，市面流行的消费级2.5G有线网卡使用的是瑞昱的RTL8156方案</li>
+</ol>
+</div>
 <h2 id="_4">实机操作</h2>
-<ul>
-<li><strong>在刷写固件之前，建议断开其他所有网络连接，以免出现意外状况</strong></li>
-</ul>
-<h4 id="ssh">固件降级并开启SSH</h4>
-<ul>
-<li>
-<p>进入路由器后台，选择下载好的固件进行升级</p>
-</li>
-<li>
-<p>升级完成后，在网址栏找到你的stock，并进行复制和记录
-<div class="highlight"><pre><span></span><code>(参考stok，每台设备不一样)stok=5c392400a7a61ef3e3b72e060dc769d8
-</code></pre></div></p>
-</li>
-<li>
-<p>接下来，在浏览器中新建一个标签页，在地址栏输入
-<div class="highlight"><pre><span></span><code>http://192.168.31.1/cgi-bin/luci/;stok=(输入你的stok)/api/xqnetwork/set_wifi_ap?ssid=tianbao&amp;encryption=NONE&amp;enctype=NONE&amp;channel=1%3Bsed%20%2Di%20%22%3Ax%3AN%3As%2Fif%20%5C%5B%2E%2A%5C%3B%20then%5Cn%2E%2Areturn%200%5Cn%2E%2Afi%2F%23tb%2F%3Bb%20x%22%20%2Fetc%2Finit.d%2Fdropbear
-</code></pre></div></p>
-</li>
-</ul>
-<p>网页出现</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>本次操作使用的机型为：Synology NAS DS923+ </p>
+<p>系统版本为：DSM 7.2.1-69057 Update 8</p>
+</div>
+<h3 id="nascpu">查询NAS的CPU型号以及适用套件架构</h3>
+<p>通过<a href="https://kb.synology.cn/zh-cn/DSM/tutorial/What_kind_of_CPU_does_my_NAS_have">群晖NAS 套件架构查询</a>，查询自己NAS所使用的套件架构，以DS923+为例，它在x23系列，在其子项目中可以找到下列表格 </p>
+<table>
+<thead>
+<tr>
+<th>型号</th>
+<th>CPU 型号</th>
+<th>核心数（单一 CPU）</th>
+<th>线程数（单一 CPU）</th>
+<th>FPU</th>
+<th><u><strong>套件架构</strong></u></th>
+<th>RAM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DS923+</td>
+<td>AMD Ryzen R1600</td>
+<td>2</td>
+<td>4</td>
+<td>✓</td>
+<td><u><strong>R1000</strong></u></td>
+<td>DDR4 ECC SODIMM 4 GB</td>
+</tr>
+</tbody>
+</table>
+<p>我们需要注意的是<mark><strong>套件架构</strong></mark>一列，就比如这台机器的套件架构为R1000 </p>
+<h3 id="_5">下载网卡驱动套件</h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p class="annotate">在购买网卡前，请确保网卡使用的方案为瑞昱的<code>RTL8152</code> <code>RTL8153</code> <code>RTL8156(1)</code> <code>RTL8157</code> <code>RTL8159</code>芯片</p>
+<ol>
+<li>一般来说，市面流行的消费级2.5G有线网卡使用的是瑞昱的RTL8156方案</li>
+</ol>
+</div>
+<p>接下来，我们需要下载适用于我们机器的网卡驱动套件，首先，我们可以在购买网卡前向客服咨询网卡内使用的芯片，也可以根据<a href="https://github.com/bb-qq/r8152?tab=readme-ov-file">Github - DSM driver for realtek RTL8152/8153/8156/8157/8159 based USB Ethernet adapters</a>的描述页面通过网卡的最大连接速率来推断网卡内使用的芯片。</p>
+<p>然后进入<a href="https://github.com/bb-qq/r8152/releases">relase page</a>，根据顶部的说明找到符合自己设备的下载链接下载驱动套件。</p>
+<p>就比如我下载的就是<code>r8152-r1000-2.19.2-2_7.2.spk</code></p>
+<h3 id="_6">安装网卡驱动套件</h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>以下操作涉及SSH以及管理员权限的使用，请在使用时确保自己设备以及数据的安全，以免造成财产损失</p>
+</div>
+<p>让我们先进入群晖的网页，登录一个管理员账户，打开“<strong>套件中心</strong>”</p>
+<p>接下来点击右上角的“<strong>手动安装</strong>”，选择并安装刚刚下载下来的网卡驱动套件</p>
+<p>首次安装必定会提示</p>
 <blockquote>
-<p>“{“msg”:“未能连接到指定WiFi(Probe timeout)”“code”:1616}”</p>
+<p>无法正确安装此套件</p>
 </blockquote>
-<p>则表示命令执行成功</p>
-<ul>
-<li>然后，在地址栏输入
-<div class="highlight"><pre><span></span><code>http://192.168.31.1/cgi-bin/luci/;stok=(输入你的stok)/api/xqnetwork/set_wifi_ap?ssid=tianbao&amp;encryption=NONE&amp;enctype=NONE&amp;channel=1%3B%2Fetc%2Finit.d%2Fdropbear%20start
-</code></pre></div></li>
-</ul>
-<p>网页出现</p>
+<p><img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/2.5Gnet/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-10-05%20111137.png" widgh=1000></p>
+<p><em>（图片来自网络）</em></p>
+</p>
+此时，我们需要前往“<strong>控制面板&gt;终端机和SNMP</strong>”，勾选“<strong>启用SSH</strong>”功能，并保存设置</p>
+<p>接下来，我们打开putty，输入NAS的IP地址以及SSH端口号，连接NAS的SSH</p>
+<p>在SSH中登入管理员账号，输入<strong><code>sudo install -m 4755 -o root -D /var/packages/r8152/target/r8152/spk_su /opt/sbin/spk_su</code></strong>，并回车</p>
+<p>这一操作并不会有任何提示，在看见</p>
 <blockquote>
-<p>“{“msg”:“未能连接到指定WiFi(Probe timeout)”“code”:1616}”</p>
+<p>用户名@设备名：~$</p>
 </blockquote>
-<p>则表示命令执行成功</p>
-<ul>
-<li>最后，在地址栏输入
-<div class="highlight"><pre><span></span><code>http://192.168.31.1/cgi-bin/luci/;stok=(输入你的stok)/api/xqsystem/set_name_password?oldPwd=当前后台管理密码&amp;newPwd=新的后台管理密码
-</code></pre></div></li>
-</ul>
-<p>网页出现</p>
-<blockquote>
-<p>“{“code”:0}”</p>
-</blockquote>
-<p>则表示命令执行成功</p>
-<ul>
-<li><strong>至此，就完成了对路由器开启SSH的步骤</strong></li>
-</ul>
-<hr />
-<h4 id="pandorabox">刷写PandoraBox</h4>
-<ul>
-<li>
-<p>开启putty，在Host Name中，输入路由器的地址（可在网络设置、属性、IPv4 DNS服务器中进行查看），然后点击<strong>Open</strong>建立连接
-<img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MIR3/putty.png"></p>
-</li>
-<li>
-<p>在 <strong>login as</strong>选项中，输入root并回车</p>
-</li>
-<li>
-<p>在 <strong>Password</strong>选项中，输入你在<strong>newPwd</strong>中输入的密码</p>
-</li>
-<li>
-<p>接下来，在命令行中输入
-<div class="highlight"><pre><span></span><code>sudo nvram set uart_en=1
-sudo nvram set flag_last_success=1
-sudo nvram set boot_wait=on
-sudo nvram commit
-</code></pre></div>
-<em>注：在需要输入密码时，请再次输入你的密码</em></p>
-</li>
-<li>
-<p>不要关闭putty，打开WinSCP
-<img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MIR3/WinSCP.png" width=500></p>
-</li>
-<li>文件协议选择<strong>SCP</strong>，小米路由器3由于过老不支持SFTP</li>
-<li>在主机名中输入路由器的地址</li>
-<li>用户名为<strong>root</strong>，密码为你在<strong>newPwd</strong>中输入的密码</li>
-<li>
-<p>连接成功后，将pb-boot文件上传到<strong>tmp</strong>文件夹</p>
-</li>
-<li>
-<p>上传完成后，回到putty，输入以下命令
-<div class="highlight"><pre><span></span><code>cd /tmp
-sudo mtd_write write (pb-boot的文件名) Bootloader
-sudo reboot
-</code></pre></div></p>
-</li>
-<li>
-<p>等待路由器重启完成后，PandoraBox大概率就已经刷写完成，此过程需要约两分钟</p>
-</li>
-<li>此时，我们断开路由器电源，使用牙签抵住Reset按钮，同时接上路由器电源</li>
-<li>等待几秒钟后，路由器状态灯开始闪烁橙色</li>
-<li>此时，我们在网络与共享中心中可以看到路由器的IP地址已经变为192.168.1.1</li>
-<li>我们在路由器中输入此地址，就可以看见Pandora的界面
-<img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MIR3/Pandora.png" width=500></li>
-<li><strong>此时，潘多拉已刷写完成</strong></li>
-</ul>
-<hr />
-<h4 id="_5">刷写老毛子固件</h4>
+<p>再次出现后，便可以关闭putty以及SSH功能</p>
+<p>接下来，我们再次在套件中心手动安装套件，便可安装成功。</p>
+<p>在插入网卡并启用套件后，我们便可以在“<strong>控制面板&gt;网络&gt;网络界面</strong>”看到“<strong>局域网3</strong>”</p>
+<p><img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/2.5Gnet/QQ%E6%88%AA%E5%9B%BE20251005112654.png"></p>
+<p>在将网卡连接网络后，能正常看见IP地址以及网络状态，网卡驱动便安装成功</p>
+<div class="admonition note">
+<p>在安装驱动后第一次重启可能会导致网卡套件停用，只需在套件中心再次启用便可</p>
+</div>
+<h3 id="bond">使用网络bond来增强网络连接的可用性</h3>
+<p class="annotate">为了保障网络连接的稳定性与可用性，我建议再使用一条网线，将群晖自带的网口与另一台交换机连接起来，以提高网络连接的可用性，同时使NAS可以继续支持网络唤醒(1)</p>
+<ol>
+<li><mark><strong>外置网卡不支持网络唤醒</strong></mark></li>
+</ol>
+<p>在将内置网卡接入交换机后，我们可以看见群晖获取到了两个IP地址</p>
+<p><img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/2.5Gnet/QQ%E6%88%AA%E5%9B%BE20251005113356.png"></p>
+<p>这时，我们需要将这两个网卡整合为一个bond</p>
+<p>点击<strong>新增</strong>，选择<strong>创建 Bond</strong>，种类选择<strong>自适应负载均衡</strong>，选中已经连接上网络的两个接口</p>
+<p><img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/2.5Gnet/QQ%E6%88%AA%E5%9B%BE20251005113657.png"></p>
+<p>确认设置无误后，点击<strong>下一步</strong>，此时，NAS会提示</p>
+<p><code>在不同速度的接口上创建 bond 可能无法达到预期速度。是否继续？</code></p>
+<p>我们只需点击<strong>是</strong>，并配置好IP地址，即可点击<strong>下一步</strong></p>
+<p>此时，NAS会提示</p>
+<p><code>每个绑定接口上的服务(例如防火墙规则和 DHCP Server 设置)在 bond 创建之后会禁用。是否要继续？</code></p>
+<p>如果我们没有将这些服务绑定到选中的端口，我们只需点击<strong>是</strong>，即可让NAS自动创建Bond</p>
+<p>待网页自动刷新后，我们便可以在网络界面中，看见“局域网1”和“局域网3”已经合并到了“Bond 1”中，并且总连接速率也达到了3500Mbps，至此，网络bond已经配置成功，我们可以继续使用NAS了</p>
+<p><img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/2.5Gnet/QQ%E6%88%AA%E5%9B%BE20251005114553.png"></p>
+<h2 id="_7">配置完成后的实际连接速率</h2>
+<p>在实际使用中，由于bond的原因，并不能真正将网速维持在2.5Gbps，通常在180MB/s到275MB/s周期性波动，但是即便如此网络速度也远超于千兆连接时的110MB/s</p>
+<p>所以从总体来看，这次的升级十分成功</p>
+<h2 id="qa">Q&amp;A</h2>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<h3 id="_8">为什么不使用矿神源提供的网卡驱动套件？</h3>
 <ul>
 <li>
-<p>打开潘多拉界面，点击<strong>选择文件</strong>
-选择刚刚下载好的padavan固件，点击<strong>恢复固件</strong></p>
+<p>在一开始，我是通过矿神的网卡驱动套件才意识到群晖NAS原来可以通过USB网卡提供网络</p>
+在实际操作中，一开始我也尝试通过这个方法来安装网卡驱动</p>
+然而，我发现似乎在DSM7.2中，群晖似乎无法通过这个套件来正常驱动网卡，并且使用这个套件的教程即使是我能找到的最新版本也是在半年前发布的了</p>
+所以，我找到了更接近现在的教程</p>
+这个教程便是使用的bolg中的方法来安装网卡驱动，在实际的尝试过后，发现可行，于是在bolg上分享</p>
 </li>
 <li>
-<p>等待进度条走完与路由器重启</p>
+<p>当然，如果你使用的是旧版本的DSM，不妨可以尝试一下以这种方式安装驱动，在操作上会比我使用的方便许多，具体教程可以参考<a href="https://www.bilibili.com/video/BV1WHUuY8EfF">这个视频</a></p>
 </li>
-<li><em>注：我们可以打开网络与共享中心查看IPv4 DNS服务器地址
-等到电脑获取到DNS服务器地址后，即表示路由器已刷机完成</em></li>
 </ul>
-<hr />
-<h4 id="usb">登录后台管理界面并配置USB网络共享</h4>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<h3 id="bond_1">为什么要放弃稳定的传输速度而选择使用Bond？</h3>
+<ul>
+<li>最主要还是为了可用性，网络唤醒其实并不需要使用bond，使用bond对我来说最大的好处是可以将两个网卡统一为一个IP地址</p>
+由于我家中有设备是通过固定IP接入的NAS，同时还需要兼顾家里人通过IP访问NAS的可能性，于是统一的IP地址便成为了提高NAS可用性的刚需</p></li>
+<li>将两个网卡创建为bond后，即使在USB网卡或者驱动发生故障时，也能够让其他内网设备继续通过原IP地址正常访问，不会导致连接中断，这便是我的考量</li>
+</ul>
+<h3 id="_9">为什么使用“自适应均衡负载”而不是使用“活动/备用”模式呢？</h3>
 <ul>
 <li>
-<p>再次将新获取的地址(一般为192.168.123.1)输入到浏览器中，会弹出路由器的认证窗口
-<img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MIR3/padavanloginin.png" width=300></p>
+<p>这是因为群晖的DSM的Link Aggregation设计问题，由于群晖的多个网卡均为同等速率，因此没有考虑(或许)到两个网卡不同速率的适用情形</p>
 </li>
 <li>
-<p>在用户名和密码都输入<strong>root</strong>，点击<strong>登录</strong>即可进入后台管理界面</p>
-</li>
-<li>
-<p>接下来点击<strong>高级设置</strong>，点击进入<strong>USB调制解调器</strong></p>
-</li>
-<li>开启<strong>启用USB调制解调器</strong>按钮</li>
-<li>将<strong>调制解调器</strong>类型选择为<strong>NDIS：LTE and other</strong></li>
-<li><strong>国家</strong>选择为<strong>China</strong></li>
-<li><strong>ISP</strong>选择为你所使用的运营商</li>
-<li><strong>首选网络</strong>选择为<strong>LTE-&gt;UMTS</strong></li>
-<li>开启<strong>自动获取DNS</strong></li>
-<li>未提及的选项保持默认</li>
-<li>
-<p>确保无误后，点击<strong>应用本页面设置</strong>
-<img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MIR3/USBMorden.png" width=500></p>
-</li>
-<li>
-<p>在完成以上设置后，将你的手机或支持USB网络共享的随身WIFI插到路由器的USB接口上，并开启USB网络共享
-等待一段时间后，就可以正常上网了
-<img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/MIR3/padavanwebmap.png" width=300></p>
+<p>在使用活动/备用模式时，群晖会按照网卡的默认排序作为优先级顺序来调用网卡</p>
+即网口的优先级为<code>局域网1&gt;局域网2&gt;局域网3</code></p>
+然而我们都知道，我们所外接的网卡为<code>局域网3</code>，<code>局域网1</code>对应的则是靠近电源接口的千兆网口</p>
+因此，若将Link Aggregation调整为活动/备用模式后，会出现虽然NAS显示连接速率为2500Mbps，但是实际传输速率只有千兆的情况</p>
 </li>
 </ul>
-<hr />
-<ul>
-<li><strong>至此，小米路由器3刷老毛子并使用USB进行网络共享的教程全部完成</strong></li>
-</ul>
+</div>
 
 
 
@@ -1383,7 +1476,7 @@ sudo reboot
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="上一页: 欢迎来到技术板块">
+          <a href="../MIR3/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 将USB网络共享至小米路由器3">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1393,20 +1486,20 @@ sudo reboot
                 上一页
               </span>
               <div class="md-ellipsis">
-                欢迎来到技术板块
+                将USB网络共享至小米路由器3
               </div>
             </div>
           </a>
         
         
           
-          <a href="../Synology-2.5Gbps-net-through-USBNIC/" class="md-footer__link md-footer__link--next" aria-label="下一页: 通过 USB 2.5G/5G/10G 网卡为群晖NAS提供高速网络连接">
+          <a href="../MKDocs/" class="md-footer__link md-footer__link--next" aria-label="下一页: 从零开始在Win11部署Material for MkDocs">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                通过 USB 2.5G/5G/10G 网卡为群晖NAS提供高速网络连接
+                从零开始在Win11部署Material for MkDocs
               </div>
             </div>
             <div class="md-footer__button md-icon">
