@@ -1,5 +1,13 @@
 site_name: yuan's Blog
-copyright: Ro Shimmmfan | © 2025 | All rights reserved.
+copyright: Ro Shimmmfan | © 2026 | All rights reserved.
+
+markdown_extensions:
+  - admonition  # 支持 `!!! note` 语法的基础扩展
+  - pymdownx.details  # 可折叠的提示框
+  - pymdownx.superfences  # 用于复杂代码块
+  - attr_list
+  - md_in_html
+
 theme: 
   name: material
 
@@ -14,11 +22,14 @@ theme:
     - navigation.instant
     - navigation.instant.progress # 加载进度指示器
   
-     
+  
+  icon:
+    annotation: material/chevron-right-circle
+  
   logo: yuanBlogLogo.png
   favicon: yuanBlogLogoInverted.png
 
-  palette:
+  palette: # 黑暗模式开关
 
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -51,8 +62,12 @@ nav:
     - tech/index.md
     - "硬件":
       - "将USB网络共享至小米路由器3": tech/MIR3.md
+      - "通过 USB 2.5G/5G/10G 网卡为群晖NAS提供高速网络连接": tech/Synology-2.5Gbps-net-through-USBNIC.md
+      - "自行购买及配置IPC时所踩过的坑": tech/IPC.md
+      - "麻雀虽小五脏俱全 - Dell Wyse 3040上手初体验": tech/Wyse3040.md
     - "软件":
       - "从零开始在Win11部署Material for MkDocs": tech/MKDocs.md
+      - "尝试从零开始上手玩Vibe Coding": tech/TryVibeCoding.md
   - "服务器": 
     - server/index.md
     - "弱电与服务器的布局发展历程": 
@@ -62,3 +77,5 @@ nav:
     - "遇到的问题":
       - "群晖DS923+": server/problems/SynologyDS923p.md
       - "铭凡UM880Pro": server/problems/minisfromUM880Pro.md
+  - "友情链接":
+    - link.md
