@@ -201,6 +201,18 @@
 - 哦还有，Vibe Coding确实好玩😋
 
 
+## 附
+
+在我发布了这篇blog不久之后，不知道为什么，继养虾潮后，又掀起来了一股养鱼潮。又是同样的剧本、又是同样的结果。
+
+一大群Deepseek以大肥鱼的角色出现在各大APP的评论区、群聊等地方，又有一群冤种因为过度信任AI而酿成大祸
+
+而我们的腾讯，也依然不肯错过这波热潮
+
+<img src="https://caihsicloud.oss-cn-guangzhou.aliyuncs.com/BlogsPicture/tech/VibeCoding/IMG_20261105_185831.jpg" width=500>
+
+唉ㄟ( ▔, ▔ )ㄏ，真是每一个群体都有每一个群体的跟头要栽啊……
+
 ## 参考
 
 [百度百科 - 智能体(人工智能领域中的概念)](https://baike.baidu.com/item/%E6%99%BA%E8%83%BD%E4%BD%93/9446647?fromtitle=agent&fromid=19703569#7)

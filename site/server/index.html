@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../tech/MKDocs/">
+        <link rel="prev" href="../tech/TryVibeCoding/">
       
       
         <link rel="next" href="networkprogress/">
@@ -20,7 +20,7 @@
     
     
       
-        <title>服务器部署的计划与现状(2025.9) - yuan's Blog</title>
+        <title>服务器部署的计划与现状(2026.9) - yuan's Blog</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#20259" class="md-skip">
+        <a href="#20269" class="md-skip">
           跳转至
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              服务器部署的计划与现状(2025.9)
+              服务器部署的计划与现状(2026.9)
             
           </span>
         </div>
@@ -502,6 +502,52 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech/IPC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    自行购买及配置IPC时所踩过的坑
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech/Wyse3040/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    麻雀虽小五脏俱全 - Dell Wyse 3040上手初体验
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -564,6 +610,29 @@
   
   <span class="md-ellipsis">
     从零开始在Win11部署Material for MkDocs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech/TryVibeCoding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    尝试从零开始上手玩Vibe Coding
     
   </span>
   
@@ -656,7 +725,7 @@
   
   
   <span class="md-ellipsis">
-    服务器部署的计划与现状(2025.9)
+    服务器部署的计划与现状(2026.9)
     
   </span>
   
@@ -669,7 +738,7 @@
   
   
   <span class="md-ellipsis">
-    服务器部署的计划与现状(2025.9)
+    服务器部署的计划与现状(2026.9)
     
   </span>
   
@@ -704,6 +773,15 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       现状
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      遇到的问题
     </span>
   </a>
   
@@ -1055,6 +1133,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      遇到的问题
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1073,14 +1160,31 @@
 
 
 
-<h1 id="20259">服务器部署的计划与现状(2025.9)</h1>
+<h1 id="20269">服务器部署的计划与现状(2026.9)</h1>
 <h2 id="_1">计划</h2>
+<p>为满足日常需求，我将需要用到一台有RAID保护的NAS进行数据的存储与备份，同时使用一台无RAID保护的NAS用于无需备份的数据存储 </p>
+<p>外加上一台拥有足够算力的Windows小主机来承载Jellyfin推流的功能，同时Windows也可以用来安装各种网盘软件，承担着下载机的功能 </p>
+<p>另外，通过一台瘦客户端原生运行Linux系统，运行部分轻量应用</p>
+<p>为了尽可能所有设备在意外断电时的影响，我还需要购买一台UPS来保障断电后的短时间应急供电</p>
+<p>UPS将与NUT服务器连接，将UPS的状态同步至所有使用UPS供电的设备 </p>
+<p>同时，通过测算机柜温度与群晖内硬盘温度的关系，使用米家自动化来自动调整机柜的散热  </p>
+<h2 id="_2">现状</h2>
+<p>网络方面，我已经实现了内网全千兆网络，且通过局部2.5G网络及链路聚合以提升NAS与其他设备的传输速度。由一台中兴路由器进行拨号上网提供1000/100兆的互联网 </p>
+<p>存储方面，现在由一台搭载由4块4TB机械硬盘组成的RAID5存储池的群晖DS923+来提供存储空间 </p>
+<p>计算方面，一台装有Windows11的铭凡迷你主机，为Jellyfin的推流提供算力 </p>
+<p>同时，增设一台戴尔Wyse3040瘦客户机，运行Debian13，通过Docker提供各项轻量网络服务</p>
+<p>电力方面，雷迪司的UPS由于多次异常损坏已经下线。现在已更换为奥兰德UPS，并通过USB与群晖NAS进行连接，由群晖来提供NUT服务器业务 </p>
+<h2 id="_3">遇到的问题</h2>
+<p>现在群晖NAS的存储空间日益紧张，然而硬盘价格依然虚高。目前新增全闪NAS的计划仍处于搁置状态。</p>
+<hr />
+<h1 id="20259">服务器部署的计划与现状(2025.9)</h1>
+<h2 id="_4">计划</h2>
 <p>为满足日常需求，我将需要用到一台有RAID保护的NAS进行数据的存储与备份，同时使用一台无RAID保护的NAS用于无需备份的数据存储 </p>
 <p>外加上一台拥有足够算力的Windows小主机来承载Jellyfin推流的功能，同时Windows也可以用来安装各种网盘软件，承担着下载机的功能 </p>
 <p>为了尽可能所有设备在意外断电时的影响，我还需要购买一台UPS来保障断电后的短时间应急供电</p>
 <p>UPS将与NUT服务器连接，将UPS的状态同步至所有使用UPS供电的设备 </p>
 <p>同时，通过测算机柜温度与群晖内硬盘温度的关系，使用米家自动化来自动调整机柜的散热  </p>
-<h2 id="_2">现状</h2>
+<h2 id="_5">现状</h2>
 <p>网络方面，我已经实现了内网全千兆网络，正在尝试局部2.5G网络以提升NAS与其他设备的传输速度。由一台锐捷睿易路由器进行拨号上网提供300/40兆的互联网 </p>
 <p>存储方面，现在由一台搭载由4块4TB机械硬盘组成的RAID5存储池的群晖DS923+来提供存储空间 </p>
 <p>计算方面，一台装有Windows11的铭凡迷你主机，为Jellyfin的推流提供算力 </p>
@@ -1089,14 +1193,14 @@
 <p>米家温湿度计和智能插座增强版均已购买，机柜散热的自动化已初步配置完成，能够保障在35℃的室温下，NAS硬盘保持在50℃以下 </p>
 <hr />
 <h1 id="20258">服务器部署的计划与现状(2025.8)</h1>
-<h2 id="_3">计划</h2>
+<h2 id="_6">计划</h2>
 <p>为满足日常需求，我将需要用到一台NAS进行数据的存储与备份 </p>
 <p>外加上一台拥有足够算力的Windows小主机来承载Jellyfin推流的功能，同时Windows也可以用来安装各种网盘软件，承担着下载机的功能 </p>
 <p>为了尽可能所有设备在意外断电时的影响，我还需要购买一台UPS来保障断电后的短时间应急供电</p>
 <p>UPS将与NUT服务器连接，将UPS的状态同步至所有使用UPS供电的设备 </p>
 <p>同时，通过测算机柜温度与群晖内硬盘温度的关系，使用米家自动化来自动调整机柜的散热 </p>
 <p>最后，我还将尝试购买软路由作为非侵入式旁路由使用 </p>
-<h2 id="_4">现状</h2>
+<h2 id="_7">现状</h2>
 <p>网络方面，我已经实现了内网全千兆网络，正在尝试局部2.5G网络以提升NAS与其他设备的传输速度。由一台锐捷睿易路由器进行拨号上网提供300/40兆的互联网 </p>
 <p>存储方面，现在由一台搭载由4块4TB机械硬盘组成的RAID5存储池的群晖DS923+来提供存储空间 </p>
 <p>计算方面，一台装有Windows11的铭凡迷你主机，为Jellyfin的推流和本地AI模型的计算提供算力 </p>
@@ -1105,14 +1209,14 @@
 <p>米家温湿度计和智能插座增强版均已购买，机柜散热的自动化已初步配置完成，能够保障在35℃的室温下，NAS硬盘保持在50℃以下 </p>
 <hr />
 <h1 id="20252">服务器部署的计划与现状(2025.2)</h1>
-<h2 id="_5">计划</h2>
+<h2 id="_8">计划</h2>
 <p>为满足日常需求，我将需要用到一台NAS进行数据的存储与备份 </p>
 <p>外加上一台拥有足够算力的Windows小主机来承载Jellyfin推流的功能，同时Windows也可以用来安装各种网盘软件，承担着下载机的功能 </p>
 <p>与此同时，为了顺应AI在生活中越来越大规模的应用，我将会与<a href="https://blog.cattom.site" title="点击前往CatTom的博客">@CatTom</a>共同购买两台搭载M4芯片，拥有24GB统一内存的Mac mini，通过局域网共享算力后，用于部署不同的AI大模型 </p>
 <p>为了尽可能减少所有设备在意外断电时的影响，我还需要购买一台UPS来保障断电后的短时间应急供电 </p>
 <p>同时，我还需要一台性能较弱的瘦客户机来作为UPS服务器，做到身先士卒，在断电的时候通知其他机器关机，来电的时候开启其他机器 </p>
 <p>同时，通过测算机柜温度与群晖内硬盘温度的关系，使用米家自动化来自动调整机柜的散热 </p>
-<h2 id="_6">现状</h2>
+<h2 id="_9">现状</h2>
 <p>网络方面，我已经实现了内网全千兆网络，由一台锐捷睿易路由器进行拨号上网提供300/40兆的互联网 </p>
 <p>存储方面，现在由一台搭载由4块4TB机械硬盘组成的RAID5存储池的群晖DS923+来提供存储空间 </p>
 <p>计算方面，一台装有Windows11的铭凡迷你主机，为Jellyfin的推流和本地AI模型的计算提供算力 </p>
@@ -1161,7 +1265,7 @@
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../tech/MKDocs/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 从零开始在Win11部署Material for MkDocs">
+          <a href="../tech/TryVibeCoding/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 尝试从零开始上手玩Vibe Coding">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1171,7 +1275,7 @@
                 上一页
               </span>
               <div class="md-ellipsis">
-                从零开始在Win11部署Material for MkDocs
+                尝试从零开始上手玩Vibe Coding
               </div>
             </div>
           </a>
